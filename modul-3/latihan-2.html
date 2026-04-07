@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 2 - Layout Artikel Flexbox</title>
+    <link rel="stylesheet" href="latihan-2.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MyBlog</div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Artikel</a>
+            <a href="#">Kontak</a>
+        </nav>
+        <button class="btn-subscribe" onclick="ucapkanTerimaKasih()">Subscribe</button>
+    </header>
+
+    <section class="hero">
+        <h1>Cara Belajar Web Development di Tahun 2026</h1>
+        <p class="meta">Oleh: <strong>Destyana Silvira Kurnia</strong> | 7 April 2026</p>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.4hFLBo08seUx8wMc7E52LwHaE9?pid=Api&P=0&h=220" alt="Cover Artikel Teknologi" class="cover-img">
+    </section>
+
+    <main class="main-content">
+        <article class="content">
+            <h2>Pentingnya Belajar Flexbox</h2>
+            <p>Flexbox membuat proses pembuatan layout menjadi jauh lebih mudah daripada metode lama. Kita bisa mengatur perataan elemen hanya dengan satu baris kode.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Iklan atau artikel populer lainnya bisa diletakkan di sini.</p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>Tentang</h4>
+            <p>Blog edukasi seputar teknologi web untuk pemula.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Kategori</h4>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Media Sosial</h4>
+            <p>Instagram | Twitter</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        function ucapkanTerimaKasih() {
+            alert("Terima kasih sudah subscribe! Nantikan update terbaru dari kami.");
+        }
+    </script>
+</body>
+</html>

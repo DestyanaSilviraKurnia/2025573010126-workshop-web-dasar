@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --warna-utama: #050381;
+    --warna-sekunder: #2474de;
+    --warna-aksen: #ffc107;
+    --warna-gelap: #333;
+    --font-utama: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    font-family: var(--font-utama);
+    background-color: #f9f9f9;
+    color: var(--warna-gelap);
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(135deg, var(--warna-utama), var(--warna-sekunder));
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--warna-aksen);
+    text-decoration: underline;
+}
+
+
+section { padding: 60px 10%; }
+
+.section-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-tentang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10%;
+}
+
+.foto-bulat {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.badge {
+    background-color: var(--warna-utama);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
+
+.form-kontak {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.btn-kirim {
+    background-color: var(--warna-sekunder);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover { background-color: var(--warna-utama); }
+
+
+.materi-box {
+    background-color: #fff;
+    border-left: 8px solid var(--warna-aksen);
+    padding: 30px;
+    border-radius: 0 12px 12px 0;
+}
+
+
+footer {
+    background-color: var(--warna-gelap);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a { color: var(--warna-aksen); }

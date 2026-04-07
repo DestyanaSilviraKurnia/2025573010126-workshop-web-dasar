@@ -1,0 +1,74 @@
+
+:root {
+    --warna-utama: #2e4d2e;
+    --warna-aksen: #ffc107;
+    --font-utama: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-utama);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--warna-utama);
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.cover-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 20px; 
+    padding: 20px 5%;
+}
+
+.content { flex: 7; } 
+.sidebar { 
+    flex: 3; 
+    background: #f4f4f4;
+    padding: 15px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 40px 5%;
+    margin-top: 20px;
+}
+
+.footer-col { flex: 1; padding: 0 10px; }
+
+.btn-subscribe {
+    background-color: var(--warna-aksen);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
