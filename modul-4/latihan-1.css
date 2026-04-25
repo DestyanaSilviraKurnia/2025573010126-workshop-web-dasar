@@ -1,0 +1,87 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  background: #ddd;
+  padding: 20px;
+}
+.main-content {
+  grid-area: main;
+  padding: 20px;
+}
+
+/* Grid untuk kartu statistik */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Grid untuk tabel dan grafik berdampingan */
+.bottom-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.table-area,
+.chart-area {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  min-height: 200px;
+}
+
+/* Responsif: Layar < 768px */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr); /* Kartu jadi 2 kolom di mobile */
+  }
+
+  .bottom-content {
+    grid-template-columns: 1fr; /* Tabel & Grafik bertumpuk di mobile */
+  }
+}
