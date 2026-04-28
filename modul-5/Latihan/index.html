@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreativeDesign | Jasa Desain Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-900 font-sans dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300"
+  >
+    <header
+      class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 dark:border-slate-800 px-6 py-4"
+    >
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div
+          class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white"
+        >
+          Creative<span class="text-indigo-600">Design</span>
+        </div>
+        <nav
+          class="hidden md:flex space-x-8 font-medium text-slate-600 dark:text-slate-400"
+        >
+          <a href="#hero" class="hover:text-indigo-600 transition">Home</a>
+          <a href="#services" class="hover:text-indigo-600 transition"
+            >Layanan</a
+          >
+          <a href="#portfolio" class="hover:text-indigo-600 transition"
+            >Portofolio</a
+          >
+        </nav>
+
+        <button
+          id="theme-toggle"
+          class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 transition"
+        >
+          <span class="dark:hidden">🌙</span>
+          <span class="hidden dark:inline">☀️</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+      <section
+        id="hero"
+        class="py-20 md:py-32 flex flex-col items-center text-center"
+      >
+        <div class="max-w-3xl">
+          <span
+            class="inline-block bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs font-bold px-3 py-1 rounded-full mb-6"
+          >
+            Baru!
+          </span>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white leading-tight mb-6"
+          >
+            Desain Visual yang Memikat
+            <span class="text-indigo-600">Brand Anda</span>
+          </h1>
+          <p
+            class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed"
+          >
+            Kami membantu bisnis Anda tampil lebih profesional dengan desain
+            kreatif dan modern yang disesuaikan dengan tren industri saat ini.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="#"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-indigo-200 dark:shadow-none"
+            >
+              Mulai Sekarang
+            </a>
+            <a
+              href="#portfolio"
+              class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-600 px-8 py-4 rounded-xl font-bold transition"
+            >
+              Lihat Karya
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        class="py-20 border-t border-slate-100 dark:border-slate-800"
+      >
+        <h2
+          class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-white"
+        >
+          Layanan Kami
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl dark:hover:shadow-indigo-900/20 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-6 text-2xl"
+            >
+              🎨
+            </div>
+            <h3 class="text-xl font-bold mb-3 dark:text-white">Logo Design</h3>
+            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+              Identitas unik untuk brand Anda agar mudah diingat pelanggan dan
+              tampil menonjol.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl dark:hover:shadow-indigo-900/20 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6 text-2xl"
+            >
+              📱
+            </div>
+            <h3 class="text-xl font-bold mb-3 dark:text-white">Social Media</h3>
+            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+              Konten visual kreatif untuk meningkatkan engagement di platform
+              sosial media.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl dark:hover:shadow-indigo-900/20 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 bg-pink-100 dark:bg-pink-900/50 rounded-lg flex items-center justify-center text-pink-600 dark:text-pink-400 mb-6 text-2xl"
+            >
+              💻
+            </div>
+            <h3 class="text-xl font-bold mb-3 dark:text-white">UI/UX Design</h3>
+            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+              Tampilan aplikasi dan website yang user-friendly, interaktif, dan
+              tentunya estetik.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        class="py-20 border-t border-slate-100 dark:border-slate-800"
+      >
+        <h2
+          class="text-3xl font-bold text-center mb-12 text-slate-900 dark:text-white"
+        >
+          Portofolio Terbaru
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center font-bold text-slate-400 dark:text-slate-600 hover:bg-indigo-500 hover:text-white transition cursor-pointer overflow-hidden group"
+          >
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.PI8xZzMa1nnX-qB8MNEn6wHaE7?pid=Api&h=220&P=0"
+              alt="Tampilan Proyek A"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+
+            <span class="sr-only">Project A</span>
+          </div>
+
+          <div
+            class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center font-bold text-slate-400 dark:text-slate-600 hover:bg-indigo-500 hover:text-white transition cursor-pointer overflow-hidden group"
+          >
+            <img
+              src="https://gurubebas.com/storage/2024/09/Manfaat-dan-Fitur-Fitur-Unggulan-AI-Gambar-Bergerak-dalam-Desain-Visual.jpg"
+              alt="Tampilan Proyek B"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span class="sr-only">Project B</span>
+          </div>
+
+          <div
+            class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center font-bold text-slate-400 dark:text-slate-600 hover:bg-indigo-500 hover:text-white transition cursor-pointer overflow-hidden group"
+          >
+            <img
+              src="https://4.bp.blogspot.com/-wxdfLtk0Dvo/Umi7IQdu66I/AAAAAAAACTw/cvaRuAKxo7c/s1600/Contoh-Warna-Cat-Rumah-Menarik-2.jpg"
+              alt="Tampilan Proyek C"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span class="sr-only">Project C</span>
+          </div>
+
+          <div
+            class="aspect-square bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center font-bold text-slate-400 dark:text-slate-600 hover:bg-indigo-500 hover:text-white transition cursor-pointer overflow-hidden group"
+          >
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.t2Cqfqd-9RYA-OWNF8mNKgHaEK?pid=Api&h=220&P=0"
+              alt="Tampilan Proyek D"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span class="sr-only">Project D</span>
+          </div>
+        </div>
+        >
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-16 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="text-white font-bold text-lg mb-6">Tentang</h4>
+          <p class="leading-relaxed">
+            Agensi desain independen yang fokus pada kualitas, inovasi, dan
+            hasil yang nyata bagi klien kami.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-6">Navigasi</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="hover:text-indigo-400 transition"
+                >Syarat & Ketentuan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400 transition"
+                >Kebijakan Privasi</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-6">Kontak</h4>
+          <p>Email: halo@creativedesign.com</p>
+          <p>Lhokseumawe, Nanggroe Aceh Darussalam</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
+      });
+    </script>
+  </body>
+</html>

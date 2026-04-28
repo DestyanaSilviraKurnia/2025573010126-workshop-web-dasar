@@ -1,0 +1,17 @@
+/* Mengatur font agar lebih bersih */
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+/* Membuat komponen custom agar HTML lebih bersih */
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg;
+  }
+
+  .card-service {
+    @apply bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition duration-300;
+  }
+}
