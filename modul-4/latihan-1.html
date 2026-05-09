@@ -1,27 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="latihan-1.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <aside class="sidebar">Sidebar</aside>
-      <header class="header">Header</header>
-      <main class="main-content">
-        <section class="stats-container">
-          <div class="card">Stat 1</div>
-          <div class="card">Stat 2</div>
-          <div class="card">Stat 3</div>
-          <div class="card">Stat 4</div>
-        </section>
-        <section class="bottom-content">
-          <div class="table-area">Tabel Data</div>
-          <div class="chart-area">Grafik Placeholder</div>
-        </section>
-      </main>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 1 - Tabel Nilai Mahasiswa</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: center; }
+        thead { background-color: #2e4d2e; color: white; }
+        tfoot { background-color: #f2f2f2; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Tabel Nilai Mahasiswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Mahasiswa</th>
+                <th>Nilai UTS</th>
+                <th>Nilai UAS</th>
+                <th>Nilai Akhir</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Park Chan Yeol</td>
+                <td>80</td>
+                <td>90</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>D.O Kyungsoo</td>
+                <td>75</td>
+                <td>85</td>
+                <td>80</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kim Jongin</td>
+                <td>70</td>
+                <td>70</td>
+                <td>70</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sehun</td>
+                <td>90</td>
+                <td>95</td>
+                <td>92</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Suho</td>
+                <td>60</td>
+                <td>65</td>
+                <td>62.5</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Rata-rata</td>
+                <td>75</td>
+                <td>81</td>
+                <td>78</td>
+                <td>-</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
 </html>
+
