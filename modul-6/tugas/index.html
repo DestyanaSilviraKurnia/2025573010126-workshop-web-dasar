@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Lengkap ✨</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>My Tasks 📝</h1>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Tambah tugas baru (3-100 karakter)..."
+        />
+        <select id="priority-input">
+          <option value="rendah">Rendah</option>
+          <option value="sedang" selected>Sedang</option>
+          <option value="tinggi">Tinggi</option>
+        </select>
+        <button id="add-btn">Tambah</button>
+      </div>
+      <p id="error-msg" class="error-text"></p>
+
+      <div class="controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="aktif">Aktif</button>
+          <button class="filter-btn" data-filter="selesai">Selesai</button>
+        </div>
+        <span id="counter">0 tugas tersisa</span>
+      </div>
+
+      <ul id="todo-list"></ul>
+
+      <button id="clear-completed" class="btn-danger">
+        Hapus Semua Selesai
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

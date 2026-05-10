@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Imut ✨</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #fdf2f8; /* Pink sangat muda */
+      }
+      .kalkulator {
+        width: 320px;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 30px;
+        box-shadow: 0 15px 35px rgba(244, 114, 182, 0.2);
+        border: 4px solid #fce7f3;
+      }
+      #display {
+        width: 100%;
+        height: 70px;
+        background: #fff5f8;
+        color: #ec4899; /* Pink cerah */
+        margin-bottom: 20px;
+        text-align: right;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 2.2rem;
+        font-weight: bold;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 2px dashed #f9a8d4;
+      }
+      .tombol-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+      button {
+        padding: 18px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: 18px;
+        background: #f0f9ff; /* Biru muda pucat */
+        color: #0ea5e9;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 0 #bae6fd;
+      }
+      button:hover {
+        background: #e0f2fe;
+        transform: translateY(-2px);
+      }
+      button:active {
+        transform: translateY(2px);
+        box-shadow: 0 0 0;
+      }
+
+      /* Warna-warna Imut */
+      .operator {
+        background: #f0fdf4;
+        color: #22c55e;
+        box-shadow: 0 4px 0 #bbf7d0;
+      } /* Mint */
+      .operator:hover {
+        background: #dcfce7;
+      }
+
+      .sama-dengan {
+        background: #fdf2f8;
+        color: #db2777;
+        grid-column: span 2;
+        box-shadow: 0 4px 0 #fbcfe8;
+      } /* Pink */
+      .sama-dengan:hover {
+        background: #fce7f3;
+      }
+
+      .hapus-all {
+        background: #fff7ed;
+        color: #f97316;
+        box-shadow: 0 4px 0 #ffedd5;
+      } /* Peach */
+      .hapus-all:hover {
+        background: #ffedd5;
+      }
+
+      .backspace {
+        background: #fefce8;
+        color: #ca8a04;
+        box-shadow: 0 4px 0 #fef08a;
+      } /* Kuning */
+      .backspace:hover {
+        background: #fef9c3;
+      }
+
+      /* Angka khusus */
+      button[data-nilai] {
+        background: #f5f3ff;
+        color: #7c3aed;
+        box-shadow: 0 4px 0 #ddd6fe;
+      } /* Ungu Muda */
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="kalkulator">
+      <div id="display">0</div>
+      <div class="tombol-container" id="container">
+        <button class="hapus-all" data-aksi="clear">C</button>
+        <button class="backspace" data-aksi="backspace">⌫</button>
+        <button class="operator" data-nilai="/">÷</button>
+        <button class="operator" data-nilai="*">×</button>
+
+        <button data-nilai="7">7</button>
+        <button data-nilai="8">8</button>
+        <button data-nilai="9">9</button>
+        <button class="operator" data-nilai="-">-</button>
+
+        <button data-nilai="4">4</button>
+        <button data-nilai="5">5</button>
+        <button data-nilai="6">6</button>
+        <button class="operator" data-nilai="+">+</button>
+
+        <button data-nilai="1">1</button>
+        <button data-nilai="2">2</button>
+        <button data-nilai="3">3</button>
+        <button class="sama-dengan" data-aksi="hitung">=</button>
+
+        <button data-nilai="0" style="grid-column: span 2">0</button>
+        <button data-nilai=".">.</button>
+      </div>
+    </div>
+
+    <script src="latihan-1.js"></script>
+  </body>
+</html>

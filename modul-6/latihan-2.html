@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Imut ✨</title>
+    <style>
+      :root {
+        --pink-soft: #fdf2f8;
+        --pink-bright: #ec4899;
+        --mint: #f0fdf4;
+        --mint-text: #16a34a;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: var(--pink-soft);
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+      }
+
+      /* Header & Icon */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: span 2;
+        margin-bottom: 20px;
+      }
+      .cart-icon {
+        position: relative;
+        font-size: 1.5rem;
+        background: white;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      #cart-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: var(--pink-bright);
+        color: white;
+        font-size: 0.7rem;
+        padding: 2px 6px;
+        border-radius: 10px;
+      }
+
+      /* Product Cards */
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        padding: 15px;
+        border-radius: 20px;
+        text-align: center;
+        border: 2px solid #fce7f3;
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+      }
+      .card h3 {
+        margin: 10px 0;
+        font-size: 1.1rem;
+      }
+      .btn-add {
+        background: var(--mint);
+        color: var(--mint-text);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+      }
+
+      /* Cart Side */
+      .cart-side {
+        background: white;
+        padding: 20px;
+        border-radius: 25px;
+        height: fit-content;
+        border: 2px solid #fce7f3;
+      }
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #fce7f3;
+      }
+      .item-info h4 {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .qty-control {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .qty-btn {
+        background: #f3f4f6;
+        border: none;
+        border-radius: 5px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+      .btn-checkout {
+        background: var(--pink-bright);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        header {
+          grid-column: span 1;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Menu Dessert ✨</h1>
+        <div class="cart-icon">🛒 <span id="cart-badge">0</span></div>
+      </header>
+
+      <div class="product-grid" id="product-list"></div>
+
+      <div class="cart-side">
+        <h3>Keranjang Saya 🎀</h3>
+        <div id="cart-content">
+          <p style="color: #999; font-size: 0.8rem">
+            Wah, keranjang masih kosong...
+          </p>
+        </div>
+        <hr style="border: 0; border-top: 2px solid #fdf2f8" />
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+          "
+        >
+          <span>Total:</span>
+          <span id="total-price">Rp 0</span>
+        </div>
+        <button class="btn-checkout" onclick="checkout()">Checkout 🛍️</button>
+      </div>
+    </div>
+
+    <script src="latihan-2.js"></script>
+  </body>
+</html>
